@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 0%);
+  --color-brand-2: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(0, 0%, 27%);
+
+  --color-site-1: hsl(0, 0%, 63%);
+
+  --font-league-spartan: "League Spartan", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-league-spartan);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.slide {
+  transition: all 0.5s ease-in-out;
+}
+
+.Wrapper-DarkImgBox,
+.Wrapper-LightImgBox {
+  width: 100%;
+}
+
+.Wrapper-Furniture {
+  padding: 2rem;
+}
+
+.Wrapper-Furniture-Title {
+  font-size: 2rem;
+  color: var(--color-brand-1);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 2rem;
+}
+
+.Wrapper-Furniture-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-3);
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .Wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}

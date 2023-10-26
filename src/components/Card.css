@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 0%);
+  --color-brand-2: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(0, 0%, 27%);
+
+  --color-site-1: hsl(0, 0%, 63%);
+
+  --font-league-spartan: "League Spartan", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-league-spartan);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Card-ImgBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.Card-ImgBox > picture > img {
+  width: 100%;
+}
+
+.Card-ImgBox-BtnsBox {
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+}
+
+.Card-ImgBox-BtnsBox > button {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--color-brand-1);
+}
+
+.Card-ImgBox-BtnsBox > button:hover {
+  background-color: var(--color-brand-3);
+}
+
+.Card-ImgBox-BtnsBox > button > img {
+  width: 1rem;
+}
+
+.Card-TxtBox {
+  padding: 2rem;
+}
+
+.Card-TxtBox-Title {
+  font-size: 3.5rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.Card-TxtBox-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-3);
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Card-TxtBox-ShopBtn {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.Card-TxtBox-ShopBtn > span {
+  font-size: 2rem;
+  color: var(--color-brand-1);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.Card-TxtBox-ShopBtn:hover > span {
+  color: var(--color-brand-3);
+}
+
+.Card-TxtBox-ShopBtn > img {
+  display: block;
+  width: 6rem;
+}
+
+@media screen and (min-width: 700px) {
+  .Card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Card-ImgBox {
+    margin-bottom: 0;
+  }
+
+  .Card-ImgBox-BtnsBox {
+    right: -10rem;
+  }
+
+  .Card-TxtBox {
+    padding: 0 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Card {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Card-TxtBox {
+    padding: 4rem 2rem;
+  }
+
+  .Card-TxtBox-Title {
+    font-size: 4.5rem;
+  }
+}
