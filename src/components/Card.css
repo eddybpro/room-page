@@ -91,7 +91,7 @@ html {
   font-size: 2rem;
   color: var(--color-brand-1);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
 }
 
 .Card-TxtBox-ShopBtn:hover > span {
